@@ -1,7 +1,7 @@
 {
   "title": "Delog",
   "siteUrl": "https://delog-w3layouts.netlify.com/",
-  "description": "Delog, a GatsbyJS and Netlify CMS starter for Designers and Developers",
+  "description": "Proof of concept for using netlify cms",
   "home": {
     "title": "PodBoxx",
     "description": "Proof of concept"
