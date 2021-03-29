@@ -48,15 +48,15 @@ collections:
     create: true
     fields:
       - {
-          label: Template,
-          name: template,
-          widget: hidden,
-          default: BlogPost,
-        }
+        label: Template,
+        name: template,
+        widget: hidden,
+        default: BlogPost,
+      }
       - name: path
         label: Path
         widget: string
-        pattern: [/]
+        pattern: [ '.{8,}', "Must have at least 8 characters" ]
         hint: "Path must start with /"
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
