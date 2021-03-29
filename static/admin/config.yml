@@ -56,10 +56,6 @@ collections:
       }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - label: Meta Description
-        name: metaDescription
-        widget: text
-        required: false
       - label: Featured Image
         name: thumbnail
         widget: image
