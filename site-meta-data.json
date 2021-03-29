@@ -2,6 +2,14 @@
   "title": "PodBoxx",
   "siteUrl": "https://delog-w3layouts.netlify.com/",
   "description": "Proof of concept for using netlify cms",
+  "twitter": "https://twitter.com",
+  "facebook": "https://facebook.com",
+  "youtube": "https://youtube.com",
+  "spotify": "https://open.spotify.com/show/",
+  "apple": "https://podcasts.apple.com/us/podcast/",
+  "google": "https://podcasts.google.com/?feed=aHR0cHM6Ly9hcGkucG9kYm94eC5jb20vY2hhbm5lbHMvMTk4L3Jzcw",
+  "imageHeader" : "https://podboxx-production.s3.amazonaws.com/images/logo_podboxx.svg",
+
   "home": {
     "title": "PodBoxx",
     "description": "Proof of concept"

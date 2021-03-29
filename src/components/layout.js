@@ -12,6 +12,7 @@ export default ({children}) => {
                 site {
                     siteMetadata {
                         title
+                        imageHeader
                     }
                 }
             }
@@ -21,7 +22,7 @@ export default ({children}) => {
         <div className="site-wrapper">
             <Link to="/">
                 <img alt="header"
-                     src='https://mypodboxx.com/serious-plan/wp-content/uploads/sites/213/2020/10/podcastbanneronlyfinalversion-02.png'/>
+                     src={data.site.siteMetadata.imageHeader}/>
             </Link>
             <header className="site-header">
                 <Navigation/>
