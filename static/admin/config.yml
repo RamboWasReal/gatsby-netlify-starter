@@ -54,8 +54,17 @@ collections:
         widget: hidden,
         default: BlogPost,
       }
+      - name: path
+        label: Path
+        widget: string
+        pattern: [ '.{6,}', "Must have at least 6 characters" ]
+        hint: "Path must start with /"
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - label: Meta Description
+        name: metaDescription
+        widget: text
+        required: false
       - label: Featured Image
         name: thumbnail
         widget: image
