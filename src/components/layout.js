@@ -32,7 +32,7 @@ export default ({children}) => {
             <footer className="site-footer">
                 <p>&copy; {new Date().getFullYear()} <a
                     className="-primary">{data.site.siteMetadata.title}</a> &bull; Powered by &nbsp;
-                    <a target="_blank" href="https://www.podboxx.com">PodBoxx</a></p>
+                    <a target="_blank" rel="noreferrer" href="https://www.podboxx.com">PodBoxx</a></p>
             </footer>
         </div>
     )

@@ -26,15 +26,15 @@ export default (props) => {
     )
     return (
         <div className="navigation">
-            <a href={data.site.siteMetadata.spotify}>
-                <img style={{width: 50}} alt="spotify" src={spotify}/></a>
-            <a href={data.site.siteMetadata.apple}>
-                <img style={{width: 50}} alt="apple" src={apple}/></a>
-            <a href={data.site.siteMetadata.google}>
-                <img style={{width: 50}} alt="google" src={google}/></a>
-            <a href={data.site.siteMetadata.youtube}><img style={{width: 50}} alt="facebook" src={youtube}/></a>
-            <a href={data.site.siteMetadata.facebook}><img style={{width: 50}} alt="facebook" src={facebook}/></a>
-            <a href={data.site.siteMetadata.twitter}><img style={{width: 50}} alt="facebook" src={twitter}/></a>
+            {data.site.siteMetadata.spotify !== "null" ?  <a href={data.site.siteMetadata.spotify} rel="noreferrer" target="_blank">
+                <img style={{width: 50}} alt="spotify" src={spotify}/></a> : ""}
+            {data.site.siteMetadata.apple !== "null" ? <a href={data.site.siteMetadata.apple} rel="noreferrer" target="_blank">
+                <img style={{width: 50}} alt="apple" src={apple}/></a> : ""}
+            {data.site.siteMetadata.google !== "null" ? <a href={data.site.siteMetadata.google} rel="noreferrer" target="_blank">
+                <img style={{width: 50}} alt="google" src={google}/></a> : ""}
+            {data.site.siteMetadata.youtube !== "null" ? <a href={data.site.siteMetadata.youtube} rel="noreferrer" target="_blank"><img style={{width: 50}} alt="facebook" src={youtube}/></a> : ""}
+            {data.site.siteMetadata.facebook !== "null" ? <a href={data.site.siteMetadata.facebook} rel="noreferrer" target="_blank"><img style={{width: 50}} alt="facebook" src={facebook}/></a> : ""}
+            {data.site.siteMetadata.twitter !== "null" ? <a href={data.site.siteMetadata.twitter} rel="noreferrer" target="_blank"><img style={{width: 50}} alt="facebook" src={twitter}/></a> : ""}
         </div>
     )
 }
